@@ -16,30 +16,30 @@ cmd4 = 'cd hashcat-6.2.2 & .\hashcat.exe -m 1000 -a 0 -D 2 --outfile-format=2 -o
 cmd5 = 'cd hashcat-6.2.2 & .\hashcat.exe -m 1800 -a 0 -D 2 --outfile-format=2 -o ..\\op5.txt ..\\Hashes\\archivo_5 ..\\diccionarios\\diccionario_1.dict ..\\diccionarios\\diccionario_2.dict'
 
 # Se ejecuta cada comando
-# t1 = time.time()    
-# os.system(cmd1)
-# t2 = time.time()
-# os.system(cmd2)
-# t3 = time.time()
-# os.system(cmd3)
-# t4 = time.time()
-# os.system(cmd4)
-# t5 = time.time()
-# os.system(cmd5)
-# t6 = time.time()
+t1 = time.time()    
+os.system(cmd1)
+t2 = time.time()
+os.system(cmd2)
+t3 = time.time()
+os.system(cmd3)
+t4 = time.time()
+os.system(cmd4)
+t5 = time.time()
+os.system(cmd5)
+t6 = time.time()
 
-# # Se calcula el tiempo demorado de cada crackeo
-# t_cmd1 = t2 - t1
-# t_cmd2 = t3 - t2
-# t_cmd3 = t4 - t3
-# t_cmd4 = t5 - t4
-# t_cmd5 = t6 - t5
+# Se calcula el tiempo demorado de cada crackeo
+t_cmd1 = t2 - t1
+t_cmd2 = t3 - t2
+t_cmd3 = t4 - t3
+t_cmd4 = t5 - t4
+t_cmd5 = t6 - t5
 
-# print("T cmd1: "+ str(t_cmd1))
-# print("T cmd2: "+ str(t_cmd2))
-# print("T cmd3: "+ str(t_cmd3))
-# print("T cmd4: "+ str(t_cmd4))
-# print("T cmd5: "+ str(t_cmd5))
+print("T cmd1: "+ str(t_cmd1))
+print("T cmd2: "+ str(t_cmd2))
+print("T cmd3: "+ str(t_cmd3))
+print("T cmd4: "+ str(t_cmd4))
+print("T cmd5: "+ str(t_cmd5))
 
 # Se inicilaiza sockets
 sckt = socket.socket()
